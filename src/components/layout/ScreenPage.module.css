@@ -1,0 +1,46 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-section);
+  margin: 0 auto;
+  max-width: var(--content-width);
+  padding: var(--space-page);
+  width: 100%;
+}
+
+.notice {
+  background: var(--color-notice-background);
+  border: 1px solid var(--color-line);
+  padding: var(--space-stack);
+}
+
+.meta {
+  color: var(--color-muted);
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-section);
+}
+
+.section {
+  border-top: 1px solid var(--color-line);
+  padding-top: var(--space-stack);
+}
+
+.section h2,
+.section p,
+.children {
+  margin-top: var(--space-stack);
+}
+
+.children {
+  padding-left: 1.25rem;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

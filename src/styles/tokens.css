@@ -1,0 +1,28 @@
+/*
+ * Provisional tokens only.
+ * None of these values were read from Figma.
+ * Replace them when font files, color styles, and spacing specs are supplied.
+ * Do not treat the current values as the Poorna design system.
+ */
+
+:root {
+  --font-family: var(--font-supplied, system-ui, sans-serif);
+  /* Sampled from the Home reference PNG. Not Figma inspect tokens. */
+  --color-navy: #062a49;
+  --color-navy-mid: #0a3558;
+  --color-heading: #0c3354;
+  --color-orange: #ff6b18;
+  --color-text: #243140;
+  --color-muted: #5c6b7a;
+  --color-background: #ffffff;
+  --color-soft: #f7f9fb;
+  --color-ice: #eaf5fb;
+  --color-line: #e4e9ee;
+  --color-notice-background: #f3f6f8;
+  --content-width: 1160px;
+  --space-page: 1.5rem;
+  --space-section: 1.5rem;
+  --space-stack: 0.75rem;
+  --radius-card: 18px;
+  --radius-button: 10px;
+}

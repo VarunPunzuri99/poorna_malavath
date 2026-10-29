@@ -1,0 +1,444 @@
+.hero {
+  min-height: 620px;
+  position: relative;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: 72% 30%;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.heroScrim,
+.bannerScrim {
+  background: linear-gradient(90deg, rgba(8, 32, 56, 0.82) 0%, rgba(10, 40, 68, 0.45) 46%, rgba(10, 40, 68, 0.12) 100%);
+  inset: 0;
+  position: absolute;
+}
+
+.heroCopy,
+.bannerCopy {
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 6.5rem 1.5rem 7rem;
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow,
+.kicker,
+.kickerLight {
+  align-items: center;
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: 700;
+  gap: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.eyebrow,
+.kickerLight {
+  color: #fff;
+}
+
+.kicker {
+  color: var(--color-heading);
+}
+
+.eyebrow::before,
+.kicker::before,
+.kickerLight::before {
+  background: var(--color-orange);
+  content: "";
+  height: 2px;
+  width: 28px;
+}
+
+.heroCopy h1,
+.title {
+  color: var(--color-heading);
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  margin: 0.75rem 0 1rem;
+  text-transform: uppercase;
+}
+
+.heroCopy h1,
+.journey .title,
+.banner .title,
+.cta .title {
+  color: #fff;
+}
+
+.heroCopy p,
+.bannerCopy p {
+  font-size: 1.08rem;
+  line-height: 1.55;
+  max-width: 38rem;
+}
+
+.primary {
+  background: var(--color-orange);
+  border-radius: var(--radius-button);
+  color: #fff;
+  display: inline-flex;
+  font-weight: 700;
+  margin-top: 1.4rem;
+  padding: 0.85rem 1.1rem;
+  text-decoration: none;
+}
+
+.story,
+.early,
+.journey,
+.challenges,
+.philosophy,
+.mission,
+.timeline {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 4.5rem 1.5rem;
+}
+
+.story,
+.journey,
+.challengeIntro,
+.missionHead {
+  align-items: center;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.storyMedia,
+.journeyMedia,
+.banner {
+  position: relative;
+}
+
+.storyMedia {
+  border-radius: 22px;
+  min-height: 460px;
+  overflow: visible;
+}
+
+.storyMedia .cover {
+  border-radius: 22px;
+}
+
+.storyMedia .pullQuote {
+  color: #fff;
+}
+
+.pullQuote {
+  background: var(--color-orange);
+  border-radius: 16px;
+  bottom: 1.4rem;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+  max-width: 15rem;
+  padding: 1.1rem 1.15rem;
+  position: absolute;
+  right: -1.2rem;
+}
+
+.story p,
+.earlyCopy p,
+.journey p,
+.challenges p,
+.philosophy p,
+.mission p,
+.timeline p {
+  color: var(--color-muted);
+  line-height: 1.65;
+}
+
+.story p + p,
+.earlyCopy p {
+  margin-top: 1rem;
+}
+
+.early,
+.philosophy {
+  background: #eef6fb;
+  max-width: none;
+}
+
+.early {
+  align-items: start;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 0.85fr 1.15fr;
+}
+
+.early > *,
+.philosophy > *,
+.challenges > *,
+.mission > *,
+.timeline > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1210px;
+}
+
+.earlyCopy {
+  border-left: 3px solid var(--color-orange);
+  padding-left: 1.5rem;
+}
+
+.earlyCopy blockquote,
+.philosophy blockquote {
+  color: var(--color-heading);
+  font-size: 1.35rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.journey {
+  background: var(--color-navy);
+  color: #e7eef4;
+  max-width: none;
+}
+
+.journey ol {
+  display: grid;
+  gap: 0.8rem;
+  list-style: none;
+  margin-top: 1.4rem;
+}
+
+.journey li {
+  align-items: baseline;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: auto 9rem 1fr;
+  padding-bottom: 0.75rem;
+}
+
+.journey li span:first-child,
+.journey strong {
+  color: #fff;
+}
+
+.journey li span:first-child {
+  color: var(--color-orange);
+  font-weight: 800;
+}
+
+.journeyMedia {
+  border-radius: 20px;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.journeyMedia p {
+  bottom: 1.2rem;
+  color: #fff;
+  left: 1.2rem;
+  position: absolute;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.journeyMedia strong {
+  display: block;
+  font-size: 1.25rem;
+}
+
+.challenges,
+.mission,
+.timeline {
+  max-width: none;
+}
+
+.challenges ul {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+}
+
+.challenges li,
+.mission article,
+.timeline article {
+  background: var(--color-soft);
+  border-radius: 16px;
+  padding: 1.2rem 1rem 1.3rem;
+}
+
+.mark {
+  align-items: center;
+  background: #fff1e8;
+  border-radius: 999px;
+  color: var(--color-orange);
+  display: inline-flex;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+
+.challenges h3,
+.mission h3,
+.timeline h3 {
+  color: var(--color-heading);
+  margin: 0.4rem 0;
+}
+
+.philosophy {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.missionGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mission article p:first-child {
+  color: var(--color-orange);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.banner {
+  max-width: none;
+  min-height: 340px;
+  overflow: hidden;
+}
+
+.timeline ol {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  position: relative;
+}
+
+.timeline ol::before {
+  background: #d5e0ea;
+  content: "";
+  height: 2px;
+  left: 8%;
+  position: absolute;
+  right: 8%;
+  top: 16px;
+}
+
+.step {
+  align-items: center;
+  background: var(--color-navy);
+  border-radius: 999px;
+  color: #fff;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 700;
+  height: 32px;
+  justify-content: center;
+  margin: 0 auto 0.9rem;
+  position: relative;
+  width: 32px;
+  z-index: 1;
+}
+
+.featured .step {
+  background: var(--color-orange);
+}
+
+.featured article {
+  background: var(--color-navy);
+  color: #fff;
+}
+
+.featured h3,
+.featured p {
+  color: #fff;
+}
+
+.featured article p:first-child {
+  color: var(--color-orange);
+}
+
+.timeline article p:first-child {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.timelineNote {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
+.timelineNote p {
+  font-style: italic;
+}
+
+.timelineNote a {
+  color: var(--color-orange);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cta {
+  background: var(--color-orange);
+  color: #fff;
+  padding: 3.2rem 1.5rem;
+  text-align: center;
+}
+
+.cta p {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.journey p {
+  color: #d7e3ec;
+}
+
+.journeyMedia p,
+.journeyMedia strong {
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .story,
+  .early,
+  .journey,
+  .challengeIntro,
+  .missionHead,
+  .challenges ul,
+  .missionGrid,
+  .timeline ol {
+    grid-template-columns: 1fr;
+  }
+
+  .journey li {
+    grid-template-columns: auto 1fr;
+  }
+
+  .pullQuote {
+    right: 1rem;
+  }
+
+  .timeline ol::before {
+    display: none;
+  }
+}

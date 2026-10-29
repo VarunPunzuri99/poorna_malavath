@@ -1,0 +1,712 @@
+.hero {
+  min-height: 640px;
+  position: relative;
+}
+
+.heroImage,
+.cover {
+  object-fit: cover;
+}
+
+.heroImage {
+  object-position: 78% 28%;
+}
+
+.heroScrim {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 30, 52, 0.82) 0%,
+    rgba(10, 40, 68, 0.5) 42%,
+    rgba(10, 40, 68, 0.12) 100%
+  );
+  inset: 0;
+  position: absolute;
+}
+
+.heroCopy {
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 6.2rem 1.5rem 8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow,
+.kicker,
+.kickerLight {
+  align-items: center;
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: 700;
+  gap: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.eyebrow,
+.kickerLight {
+  color: #fff;
+}
+
+.kicker {
+  color: var(--color-heading);
+}
+
+.eyebrow::before,
+.kicker::before,
+.kickerLight::before {
+  background: var(--color-orange);
+  content: "";
+  height: 2px;
+  width: 28px;
+}
+
+.heroCopy h1,
+.title {
+  color: var(--color-heading);
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  margin: 0.75rem 0 1rem;
+  text-transform: uppercase;
+}
+
+.heroCopy h1,
+.expeditions .title,
+.records .title,
+.cta .title {
+  color: #fff;
+}
+
+.heroLead {
+  font-size: 1.25rem;
+  line-height: 1.45;
+  max-width: 28rem;
+}
+
+.heroCopy p {
+  line-height: 1.55;
+  max-width: 34rem;
+}
+
+.primary,
+.ctaPrimary,
+.ctaGhost {
+  border-radius: var(--radius-button);
+  display: inline-flex;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primary,
+.ctaPrimary {
+  background: var(--color-orange);
+  color: #fff;
+  margin-top: 1.4rem;
+  padding: 0.85rem 1.1rem;
+}
+
+.scrollHint {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  margin-top: 2.4rem;
+  text-transform: uppercase;
+}
+
+.metrics {
+  margin: -3.8rem auto 0;
+  max-width: 1180px;
+  padding: 0 1.25rem;
+  position: relative;
+  z-index: 2;
+}
+
+.metrics ul {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(6, 42, 73, 0.12);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  padding: 1.45rem 1.4rem;
+}
+
+.metrics strong,
+.everestCopy dt {
+  color: var(--color-heading);
+  display: block;
+  font-size: 1.7rem;
+}
+
+.metrics span,
+.everestCopy dd {
+  color: var(--color-muted);
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.summits,
+.expeditions,
+.awards,
+.records,
+.media {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 4.4rem 1.5rem;
+}
+
+.sectionHead,
+.mediaIntro {
+  align-items: end;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1.15fr 0.85fr;
+  margin-bottom: 1.8rem;
+}
+
+.sectionHead p,
+.mediaIntro p,
+.summits p,
+.awards p,
+.records p,
+.media p {
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.everest {
+  background: #eef6fb;
+  border-radius: 22px;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 0.95fr 1.05fr;
+  overflow: hidden;
+}
+
+.everestMedia,
+.recordsMedia,
+.mediaFeature,
+.expeditionBanner {
+  position: relative;
+}
+
+.everestMedia {
+  min-height: 420px;
+}
+
+.everestCopy {
+  padding: 2rem 1.8rem 2rem 0.4rem;
+}
+
+.badge {
+  background: var(--color-orange);
+  border-radius: 999px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0.7rem;
+  text-transform: uppercase;
+}
+
+.everestCopy h3,
+.awardGrid h3,
+.expeditionGrid h3,
+.mediaList strong,
+.filmCard h3 {
+  color: var(--color-heading);
+  font-size: 1.35rem;
+  line-height: 1.2;
+  margin: 0.85rem 0 0.7rem;
+  text-transform: uppercase;
+}
+
+.everestCopy dl {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1.4rem;
+}
+
+.summitGrid,
+.expeditionGrid,
+.awardGrid {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+.summitGrid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1.4rem;
+}
+
+.summitGrid li {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.summitVisual {
+  height: 210px;
+  position: relative;
+}
+
+.summitCopy {
+  background: var(--color-navy);
+  color: #fff;
+  padding: 1rem 1.05rem 1.2rem;
+}
+
+.summitMeta {
+  color: var(--color-orange);
+  display: flex;
+  font-size: 0.78rem;
+  font-weight: 700;
+  justify-content: space-between;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.summitMeta span:last-child {
+  color: #b8c8d6;
+}
+
+.summitCopy h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 0.55rem 0 0.25rem;
+}
+
+.summitCopy p {
+  color: #b8c8d6;
+  margin: 0;
+}
+
+.summitNote {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
+.summitNote p {
+  font-style: italic;
+}
+
+.summitNote a,
+.mediaDesk a {
+  color: var(--color-orange);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.expeditions {
+  background: var(--color-navy);
+  color: #e7eef4;
+  max-width: none;
+}
+
+.expeditions > *,
+.awards > *,
+.media > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+}
+
+.expeditions .sectionHead p {
+  color: #9fb3c4;
+}
+
+.expeditionBanner {
+  border-radius: 18px;
+  min-height: 280px;
+  overflow: hidden;
+}
+
+.expeditionBannerCopy {
+  background: linear-gradient(transparent, rgba(6, 24, 40, 0.78));
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  padding: 3rem 1.3rem 1.2rem;
+  position: absolute;
+  right: 0;
+}
+
+.expeditionBannerCopy strong {
+  display: block;
+  font-size: 1.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.expeditionGrid {
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 1.3rem;
+}
+
+.expeditionGrid li {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1.1rem 1rem 1.2rem;
+}
+
+.featuredExpedition {
+  background: var(--color-orange) !important;
+}
+
+.expeditionTop {
+  color: var(--color-orange);
+  display: flex;
+  font-size: 0.82rem;
+  font-weight: 800;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.featuredExpedition .expeditionTop,
+.featuredExpedition h3,
+.featuredExpedition p {
+  color: #fff;
+}
+
+.expeditionGrid h3 {
+  color: #fff;
+  font-size: 1.05rem;
+  margin: 0 0 0.55rem;
+  text-transform: none;
+}
+
+.expeditionGrid p {
+  color: #b7c7d5;
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.awards {
+  background: #eaf5fb;
+  max-width: none;
+}
+
+.awardGrid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.awardGrid li {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(6, 42, 73, 0.06);
+  padding: 1.15rem 1rem 1.25rem;
+}
+
+.awardTop {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.awardTop span:last-child {
+  color: var(--color-orange);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.awardMark {
+  align-items: center;
+  border: 1.5px solid var(--color-orange);
+  border-radius: 999px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+.awardBody {
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+
+.awardQuote {
+  border-left: 3px solid var(--color-orange);
+  color: var(--color-heading);
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 1.8rem 0 0;
+  max-width: 48rem;
+  padding-left: 1.1rem;
+}
+
+.records {
+  align-items: stretch;
+  background: var(--color-navy);
+  color: #e7eef4;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1.05fr 0.95fr;
+  max-width: none;
+  padding-left: max(1.5rem, calc((100% - 1240px) / 2 + 1.5rem));
+  padding-right: max(1.5rem, calc((100% - 1240px) / 2 + 1.5rem));
+}
+
+.recordsCopy p {
+  color: #9fb3c4;
+}
+
+.records ol {
+  display: grid;
+  gap: 0.9rem;
+  list-style: none;
+  margin-top: 1.4rem;
+}
+
+.records li {
+  align-items: start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: auto 1fr;
+  padding-bottom: 0.85rem;
+}
+
+.records li span:first-child {
+  align-items: center;
+  background: var(--color-orange);
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: 800;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+.records strong {
+  color: #fff;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.recordsMedia {
+  border-radius: 18px;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.recordsMedia > p {
+  align-items: center;
+  background: rgba(6, 24, 40, 0.78);
+  border-radius: 10px;
+  bottom: 1rem;
+  color: var(--color-orange);
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 800;
+  gap: 0.45rem;
+  left: 1rem;
+  letter-spacing: 0.08em;
+  padding: 0.55rem 0.7rem;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.media {
+  max-width: none;
+}
+
+.mediaLayout {
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mediaFeature {
+  border-radius: 18px;
+  min-height: 260px;
+  overflow: hidden;
+}
+
+.mediaFeature span {
+  background: var(--color-orange);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  left: 1rem;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0.7rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: 1rem;
+}
+
+.filmCard {
+  background: var(--color-navy);
+  border-radius: 18px;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 1.4rem 1.2rem 1.3rem;
+}
+
+.filmCard h3,
+.filmCard p {
+  color: #fff;
+}
+
+.filmCard a {
+  align-items: center;
+  color: #fff;
+  display: inline-flex;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.filmCard a span[aria-hidden="true"] {
+  align-items: center;
+  background: var(--color-orange);
+  border-radius: 999px;
+  display: inline-flex;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+.mediaList {
+  display: grid;
+  list-style: none;
+}
+
+.mediaList a {
+  align-items: center;
+  border-bottom: 1px solid var(--color-line);
+  color: inherit;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: auto 1fr auto;
+  padding: 0.95rem 0;
+  text-decoration: none;
+}
+
+.mediaMark {
+  align-items: center;
+  background: #fff1e8;
+  border-radius: 999px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+.mediaTag {
+  color: var(--color-orange);
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mediaList strong {
+  display: block;
+  margin: 0.2rem 0;
+  text-transform: none;
+}
+
+.mediaList span:last-child {
+  color: var(--color-orange);
+}
+
+.mediaDesk {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+
+.mediaDesk p {
+  font-style: italic;
+}
+
+.cta {
+  align-items: center;
+  background: var(--color-orange);
+  color: #fff;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  padding: 3rem 1.5rem;
+}
+
+.cta > div:first-child {
+  margin: 0 auto 0 max(1.5rem, calc((100% - 1240px) / 2 + 1.5rem));
+  max-width: 40rem;
+}
+
+.ctaActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-right: max(1.5rem, calc((100% - 1240px) / 2 + 1.5rem));
+}
+
+.ctaPrimary {
+  background: #fff;
+  color: var(--color-heading);
+  margin-top: 0;
+}
+
+.ctaGhost {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #fff;
+  padding: 0.85rem 1.1rem;
+}
+
+.cta p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 1000px) {
+  .metrics ul,
+  .sectionHead,
+  .mediaIntro,
+  .everest,
+  .summitGrid,
+  .expeditionGrid,
+  .awardGrid,
+  .records,
+  .mediaLayout,
+  .everestCopy dl {
+    grid-template-columns: 1fr;
+  }
+
+  .cta,
+  .summitNote,
+  .mediaDesk {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cta > div:first-child,
+  .ctaActions {
+    margin: 0;
+  }
+}

@@ -1,0 +1,987 @@
+.cover {
+  object-fit: cover;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: 68% 28%;
+}
+
+.srOnly {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.hero {
+  background: #07243d;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+  min-height: 760px;
+}
+
+.heroCopy {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 3rem 2.4rem 2.2rem;
+}
+
+.heroBadge,
+.photoBadge,
+.pill {
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heroBadge {
+  background: rgba(255, 255, 255, 0.08);
+  color: #d5e2ec;
+  display: inline-flex;
+  padding: 0.4rem 0.7rem;
+  width: fit-content;
+}
+
+.hero h1,
+.journey h2,
+.featured h2,
+.notes h2,
+.transform h2,
+.lessons h2,
+.article h2,
+.interview h2,
+.follow h2 {
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  margin: 0 0 0.9rem;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: clamp(3rem, 4.6vw, 4.5rem);
+  font-weight: 650;
+  max-width: 8ch;
+}
+
+.period {
+  color: var(--color-orange);
+}
+
+.heroCopy p {
+  color: #d5e2ec;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 28rem;
+}
+
+.play,
+.textLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.play {
+  align-items: center;
+  display: flex;
+  gap: 0.85rem;
+  width: fit-content;
+}
+
+.play > span:first-child {
+  align-items: center;
+  background: var(--color-orange);
+  border-radius: 50%;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 48px;
+  justify-content: center;
+  width: 48px;
+}
+
+.play small {
+  color: #c5d4e0;
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 0.15rem;
+}
+
+.play:focus-visible,
+.textLink:focus-visible,
+.tab:focus-visible,
+.tabActive:focus-visible,
+.follow button:focus-visible,
+.follow input:focus-visible,
+.noteCard a:focus-visible,
+.overlayCard a:focus-visible,
+.footer a:focus-visible {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 3px;
+}
+
+.heroPhoto,
+.journeyPhoto,
+.featuredPhoto,
+.transformPhoto,
+.articlePhoto,
+.interviewPhoto,
+.notePhoto {
+  min-height: 240px;
+  position: relative;
+}
+
+.heroPhoto blockquote,
+.journeyCaption,
+.featuredMeta,
+.photoBadge {
+  position: absolute;
+  z-index: 1;
+}
+
+.photoBadge {
+  align-items: center;
+  background: rgba(7, 24, 40, 0.72);
+  color: #fff;
+  display: inline-flex;
+  gap: 0.4rem;
+  left: 1.1rem;
+  padding: 0.38rem 0.65rem;
+  top: 1.1rem;
+}
+
+.photoBadge::before {
+  background: var(--color-orange);
+  border-radius: 50%;
+  content: "";
+  height: 7px;
+  width: 7px;
+}
+
+.heroPhoto blockquote {
+  background: linear-gradient(180deg, rgba(6, 24, 42, 0) 0%, rgba(6, 24, 42, 0.88) 58%);
+  bottom: 0;
+  color: #fff;
+  font-size: clamp(1.55rem, 2.5vw, 2.2rem);
+  font-weight: 650;
+  left: 0;
+  line-height: 1.2;
+  margin: 0;
+  padding: 4.5rem 1.5rem 1.5rem;
+  right: 0;
+}
+
+.journey {
+  align-items: center;
+  background: #eef6fb;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  padding: 3.5rem max(1.5rem, calc((100% - 1240px) / 2));
+}
+
+.journeyPhoto,
+.featuredPhoto,
+.transformPhoto,
+.interviewPhoto,
+.articlePhoto {
+  border-radius: 18px;
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.journeyPhoto .cover {
+  object-position: 50% 20%;
+}
+
+.journeyCaption,
+.featuredMeta {
+  color: #fff;
+  margin: 0;
+}
+
+.journeyCaption {
+  background: linear-gradient(180deg, rgba(6, 24, 42, 0) 0%, rgba(6, 24, 42, 0.88) 55%);
+  bottom: 0;
+  font-size: 1.45rem;
+  font-weight: 650;
+  left: 0;
+  line-height: 1.25;
+  padding: 4rem 1.2rem 2.2rem;
+  right: 0;
+}
+
+.journeyMeta,
+.featuredMeta {
+  bottom: 0.9rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  left: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.journeyMeta {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+
+.kicker,
+.kickerLight {
+  align-items: center;
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: 800;
+  gap: 0.6rem;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.8rem;
+  text-transform: uppercase;
+}
+
+.kicker {
+  color: var(--color-orange);
+}
+
+.kickerLight {
+  color: #fff;
+}
+
+.kicker::before,
+.kickerLight::before {
+  background: var(--color-orange);
+  content: "";
+  height: 2px;
+  width: 28px;
+}
+
+.journey h2,
+.featured h2,
+.notes h2,
+.lessons h2,
+.article h2 {
+  color: var(--color-heading);
+  font-size: clamp(2rem, 3.4vw, 3.15rem);
+}
+
+.journeyCopy p,
+.featuredCopy > p,
+.lede,
+.lessons .splitHead > p,
+.articleCopy > p,
+.transformCopy > p,
+.interviewCard > p {
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin: 0 0 1.1rem;
+}
+
+.principles,
+.article ul,
+.interview ul,
+.lessonGrid,
+.social,
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.principles {
+  border-top: 1px solid #d5e2ec;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1.2rem 0 1.3rem;
+  padding-top: 1rem;
+}
+
+.principles li {
+  color: var(--color-heading);
+  font-size: 0.92rem;
+  font-weight: 700;
+  padding-left: 1.3rem;
+  position: relative;
+}
+
+.principles li::before {
+  border: 1.5px solid var(--color-orange);
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 0;
+  position: absolute;
+  top: 0.1rem;
+  width: 14px;
+}
+
+.textLink {
+  color: var(--color-heading);
+  font-weight: 800;
+}
+
+.explore {
+  align-items: center;
+  display: flex;
+  gap: 0.8rem;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 0.4rem 1.5rem 1.2rem;
+}
+
+.explore > p {
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.tabList {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.tab,
+.tabActive {
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  gap: 0.4rem;
+  padding: 0.7rem 0.85rem;
+}
+
+.tab {
+  background: #fff;
+  border: 1px solid #e1e8ee;
+  color: var(--color-heading);
+}
+
+.tabActive {
+  background: #07243d;
+  border: 1px solid #07243d;
+  color: #fff;
+}
+
+.featured {
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  margin: 0 auto 1rem;
+  max-width: 1240px;
+  padding: 0.6rem 1.5rem 1.5rem;
+}
+
+.featuredPhoto .cover {
+  object-position: 50% 18%;
+}
+
+.featuredCopy {
+  align-self: center;
+}
+
+.callout {
+  align-items: center;
+  background: #f4f8fb;
+  border-radius: 14px;
+  color: var(--color-heading);
+  display: flex;
+  font-weight: 700;
+  gap: 0.8rem;
+  margin: 0 0 1.2rem;
+  padding: 0.9rem 1rem;
+}
+
+.callout span {
+  color: var(--color-orange);
+  font-size: 1.2rem;
+}
+
+.notes {
+  background: #eef6fb;
+  padding-bottom: 1rem;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 4rem 1.5rem 3.2rem;
+}
+
+.lede {
+  max-width: 40rem;
+}
+
+.live {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.noteGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.noteCard,
+.overlayCard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(12, 51, 84, 0.06);
+  min-width: 0;
+  overflow: hidden;
+}
+
+.noteCard a,
+.overlayCard a {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+}
+
+.notePhoto {
+  aspect-ratio: 2.7 / 1;
+  display: block;
+  min-height: 0;
+  width: 100%;
+}
+
+.noteFallback {
+  align-items: center;
+  background: #d7e4ee;
+  color: var(--color-heading);
+  display: flex;
+  justify-content: center;
+  min-height: 180px;
+}
+
+.noteBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.95rem 1rem 1.1rem;
+}
+
+.pill {
+  background: #fff4ec;
+  color: #c45512;
+  padding: 0.28rem 0.5rem;
+  width: fit-content;
+}
+
+.noteBody h3 {
+  color: var(--color-heading);
+  font-size: 1.2rem;
+  line-height: 1.25;
+  margin: 0.15rem 0;
+}
+
+.noteText,
+.noteMeta {
+  color: var(--color-muted);
+  line-height: 1.45;
+}
+
+.noteMeta {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.overlayCard {
+  background: #12324c;
+  color: #fff;
+  min-height: 360px;
+  position: relative;
+}
+
+.overlayCard .notePhoto {
+  aspect-ratio: auto;
+  height: 100%;
+  inset: 0;
+  min-height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.overlayCard .noteBody {
+  background: linear-gradient(180deg, rgba(6, 24, 42, 0) 28%, rgba(6, 24, 42, 0.88) 72%);
+  justify-content: flex-end;
+  min-height: 420px;
+  position: relative;
+  z-index: 1;
+}
+
+.overlayCard h3,
+.overlayCard .noteText,
+.overlayCard .noteMeta {
+  color: #fff;
+}
+
+.overlayCard .pill {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.transform {
+  align-items: center;
+  background: #07243d;
+  color: #fff;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  padding: 4.2rem max(1.5rem, calc((100% - 1240px) / 2));
+}
+
+.transform h2,
+.interview h2,
+.follow h2 {
+  color: #fff;
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
+}
+
+.transformCopy > p {
+  color: #d5e2ec;
+}
+
+.transform blockquote {
+  background: #0e3c60;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  margin: 0 0 1.2rem;
+  padding: 1rem 1rem 1rem 2.4rem;
+  position: relative;
+}
+
+.transform blockquote span {
+  color: var(--color-orange);
+  font-size: 1.8rem;
+  left: 0.8rem;
+  position: absolute;
+  top: 0.35rem;
+}
+
+.transform .textLink,
+.interview .textLink,
+.article .textLink,
+.featured .textLink,
+.journey .textLink {
+  color: var(--color-orange);
+}
+
+.transformPhoto .cover {
+  object-position: 50% 18%;
+}
+
+.featuredMeta {
+  bottom: 0.85rem;
+}
+
+.lessons {
+  background: #fff;
+}
+
+.splitHead {
+  align-items: end;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  margin-bottom: 1.5rem;
+}
+
+.lessonGrid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lessonGrid li {
+  border: 1px solid #e4ebf1;
+  border-radius: 16px;
+  min-width: 0;
+  padding: 1rem;
+}
+
+.lessonGrid li > div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lessonIcon {
+  align-items: center;
+  background: #fff4ec;
+  border-radius: 10px;
+  color: var(--color-orange);
+  display: inline-flex;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+
+.lessonGrid li > div span:last-child {
+  color: #b7c4cf;
+  font-weight: 800;
+}
+
+.lessonGrid h3 {
+  color: var(--color-heading);
+  font-size: 1.15rem;
+  margin: 0.9rem 0 0.4rem;
+}
+
+.lessonGrid p {
+  color: var(--color-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.article {
+  align-items: center;
+  background: #eef6fb;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  padding: 3rem max(1.5rem, calc((100% - 1240px) / 2));
+}
+
+.article ul {
+  margin: 0 0 1rem;
+}
+
+.article li {
+  margin: 0.35rem 0 0.35rem 0.2rem;
+  padding-left: 0.9rem;
+  position: relative;
+}
+
+.article li::before {
+  background: var(--color-orange);
+  border-radius: 50%;
+  content: "";
+  height: 7px;
+  left: 0;
+  position: absolute;
+  top: 0.5rem;
+  width: 7px;
+}
+
+.article .noteMeta {
+  margin-bottom: 0.8rem;
+}
+
+.articlePhoto .cover {
+  object-position: 50% 30%;
+}
+
+.interviewImage {
+  object-fit: cover;
+  object-position: center 28%;
+}
+
+.interview {
+  align-items: stretch;
+  display: grid;
+  gap: 1.4rem;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 3.4rem max(1.5rem, calc((100% - 1240px) / 2)) 4rem;
+}
+
+.interviewPhoto {
+  align-self: stretch;
+  height: 100%;
+  min-height: 0;
+}
+
+.interviewCard {
+  background: #f4f8fb;
+  border-radius: 18px;
+  padding: 1.5rem 1.4rem;
+}
+
+.interviewCard > p {
+  color: #243140;
+}
+
+.interviewCard .kicker {
+  color: var(--color-orange);
+}
+
+.interviewCard .noteMeta {
+  color: #3d4d5c;
+}
+
+.interview h2 {
+  color: var(--color-heading);
+}
+
+.interview ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.9rem;
+}
+
+.interview li {
+  background: #fff;
+  border: 1px solid #d5e0ea;
+  border-radius: 999px;
+  color: #0c3354;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 0.35rem 0.7rem;
+}
+
+.follow {
+  background: #07243d;
+  border-radius: 22px;
+  color: #fff;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  margin: 0 auto 2.5rem;
+  max-width: 1160px;
+  padding: 2rem 1.6rem;
+}
+
+.follow > div > p:first-child {
+  color: var(--color-orange);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+}
+
+.follow > div > p:last-child {
+  color: #d5e2ec;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.follow form {
+  align-content: start;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.follow form > span {
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  color: #6b7c8c;
+  display: flex;
+  gap: 0.45rem;
+  min-width: 0;
+  padding: 0.35rem 0.45rem 0.35rem 0.75rem;
+}
+
+.follow input {
+  border: 0;
+  color: var(--color-heading);
+  flex: 1;
+  font: inherit;
+  min-width: 0;
+  padding: 0.55rem 0.2rem;
+}
+
+.follow input:focus {
+  outline: none;
+}
+
+.follow button {
+  background: var(--color-orange);
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  padding: 0.7rem 0.85rem;
+}
+
+.follow small {
+  color: #c5d4e0;
+}
+
+.footer {
+  background: #07243d;
+  color: #d5e2ec;
+  padding: 3.4rem 1.5rem 1.6rem;
+}
+
+.footerGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1.3fr 0.8fr 0.8fr 1fr;
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.brand {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  gap: 0.7rem;
+  text-decoration: none;
+}
+
+.brand > span:first-child {
+  align-items: center;
+  background: #0e3c60;
+  border-radius: 50%;
+  display: inline-flex;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.brand small {
+  color: var(--color-orange);
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.footerGrid > div > p {
+  line-height: 1.5;
+  margin: 0.8rem 0;
+  max-width: 22rem;
+}
+
+.footer h2 {
+  color: var(--color-orange);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.7rem;
+  text-transform: uppercase;
+}
+
+.footer li {
+  margin: 0.35rem 0;
+}
+
+.footer a {
+  color: #d5e2ec;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.social span {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+
+.footerBase {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #9fb3c4;
+  display: flex;
+  font-size: 0.82rem;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 1.6rem auto 0;
+  max-width: 1160px;
+  padding-top: 1rem;
+}
+
+.footerBase p:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+@media (max-width: 1100px) {
+  .hero,
+  .journey,
+  .featured,
+  .transform,
+  .article,
+  .interview,
+  .follow,
+  .splitHead,
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .noteGrid,
+  .lessonGrid,
+  .principles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero h1 {
+    max-width: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .heroCopy,
+  .journey,
+  .featured,
+  .transform,
+  .article,
+  .interview,
+  .explore,
+  .wrap {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+  }
+
+  .noteGrid,
+  .lessonGrid,
+  .principles,
+  .footerBase {
+    grid-template-columns: 1fr;
+  }
+
+  .footerBase {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero {
+    min-height: 0;
+  }
+
+  .heroPhoto {
+    min-height: 420px;
+  }
+}

@@ -1,0 +1,145 @@
+.footer {
+  background: var(--color-navy);
+  color: #d5e2ec;
+}
+
+.inner {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1.3fr 1fr 1fr 1.1fr;
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 3.2rem 2.5rem 2rem;
+}
+
+.brand {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 800;
+  gap: 0.7rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mark {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  display: inline-flex;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.brandCopy {
+  display: grid;
+}
+
+.brandTag {
+  color: var(--color-orange);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.blurb,
+.blurbAbout {
+  margin-top: 0.9rem;
+  max-width: 16rem;
+}
+
+.blurbAbout {
+  max-width: 22rem;
+}
+
+.footer .social {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.7rem;
+  justify-content: flex-start;
+  list-style: none;
+  margin-top: 1.15rem;
+}
+
+.social li {
+  display: flex;
+  margin: 0;
+}
+
+.social span {
+  align-items: center;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 38px;
+  justify-content: center;
+  width: 38px;
+}
+
+.social svg {
+  display: block;
+}
+
+.footer h2 {
+  color: var(--color-orange);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.9rem;
+  text-transform: uppercase;
+}
+
+.footer ul {
+  display: grid;
+  gap: 0.45rem;
+  list-style: none;
+}
+
+.footer a {
+  color: inherit;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.base {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #9fb3c4;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  gap: 0.75rem 1.5rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 1rem 2.5rem 1.3rem;
+}
+
+.legal {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    padding: 2rem 1rem;
+  }
+
+  .inner > * {
+    min-width: 0;
+  }
+
+  .footer h2 {
+    overflow-wrap: anywhere;
+  }
+}
